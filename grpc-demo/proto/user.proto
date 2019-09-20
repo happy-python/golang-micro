@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package proto;
+
+service UserInfoService {
+    rpc GetUserInfo(UserRequest) returns (UserResponse);
+}
+
+// 定义客户端请求的数据格式
+message UserRequest {
+    // [修饰符] 类型 字段名 = 标识符;
+    string name = 1;
+}
+
+// 定义服务端响应的数据格式
+message UserResponse {
+    int32 id = 1;
+    string name = 2;
+    int32 age =3;
+    // repeated 修饰符表示字段是可变数组，即 slice 类型
+    repeated string tags = 4;
+}
