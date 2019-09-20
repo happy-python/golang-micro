@@ -26,30 +26,59 @@
 ### API Handler
 
 
- 1. 运行服务
+ ##### 运行服务
+    
     go run examples/greeter/srv/main.go
- 2. 运行 api
+    
+ 
+ ##### 运行 api
+    
     go run examples/greeter/api/api.go
- 3. 启动 micro api
+    
+ 
+ ##### 启动 micro api
+    
     micro api --handler=api
- 4. 向 api 发起 http 请求
-    curl "http://localhost:8080/greeter/say/hello?name=John"
- 5. 得到输出结果
+    
+ 
+ ##### 向 api 发起 http 请求
+    
+    curl "http://localhost:8080/greeter/say/hello?name=jack"
+    
+ 
+ ##### 得到输出结果
+    
     {
         "message": "Hello jack"
     }
+    
 
 ### RPC Handler
- 1. 运行服务
+ 
+ ##### 运行服务
+    
     go run examples/greeter/srv/main.go
- 2. 运行 api
+    
+ 
+ ##### 运行 api
+    
     go run examples/greeter/api/rpc/rpc.go
- 3. 启动 micro api
+    
+ 
+ ##### 启动 micro api
+    
     micro api
- 4. 向 api 发起 http 请求
+    
+ 
+ ##### 向 api 发起 http 请求
+    
     curl -H 'Content-Type: application/json' -d '{"name": "jack"}' http://localhost:8080/greeter/hello
- 5. 得到输出结果
+    
+ 
+ ##### 得到输出结果
+    
     {
         "msg": "Hello jack"
     }
+    
 
