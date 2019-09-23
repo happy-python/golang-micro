@@ -18,6 +18,8 @@
 
 > https://blog.dingkewz.com/post/tech/go_ewan_microservices_in_golang_part_1/
 
+> https://github.com/micro/examples/tree/master/greeter
+
 # 运行 API 网关示例
 
 ### 下载示例
