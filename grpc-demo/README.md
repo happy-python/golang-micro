@@ -1,9 +1,12 @@
+# 微服务是什么？
+![微服务](http://qiniu.rocbj.com/Jietu20190731-151356.png)
+
 # 初始化
     go mod init
 
-# 安装
-    go get -u google.golang.org/grpc
-    go get -u github.com/golang/protobuf/protoc-gen-go
+# 安装 gRPC / protobuf
+    go get -u google.golang.org/grpc #安装 gRPC 框架
+    go get -u github.com/golang/protobuf/protoc-gen-go # 安装 Go 版本的 protobuf 编译器
 
 # 编译
     make build

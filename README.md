@@ -33,7 +33,7 @@
  3. 启动 micro api
     micro api --handler=api
  4. 向 api 发起 http 请求
-    curl "http://localhost:8080/greeter/say/hello?name=John"
+    curl "http://localhost:8080/greeter/say/hello?name=jack"
  5. 得到输出结果
     {
         "message": "Hello jack"
